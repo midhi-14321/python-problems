@@ -255,4 +255,13 @@ else:
     result='exit'
 print(result)
 
+"""Write a program to check if three sides length form a valid
+triangle"""
+side1=int(input('enter a side1: '))
+side2=int(input('enter a side2: '))
+side3=int(input('enter a side3: '))
+if (side1+side2)>side3 or (side2+side3)>side1 or (side1+side3)>side2:
+    print('triangle can be formed')
+else:
+    print('triangle cannot be formed')
     
