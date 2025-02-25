@@ -1,0 +1,5 @@
+Iteration-wise Calculation
+
+The general formula for calculating each i value:
+
+******i=start+(iteration number−1)×step*****
