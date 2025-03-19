@@ -29,3 +29,39 @@ def find_missing_numbers(lst):
 
 lst = [6, 7, 9, 11, 12]  
 print(find_missing_numbers(lst)) 
+
+#missing number in a number
+def missing(num):
+    temp=num
+    digit_list=[]
+    missing_list=[]
+    while temp!=0:
+        digit=temp%10
+        digit_list.append(digit)
+        temp//=10
+    minimum_num=min(digit_list)
+    maximum_num=max(digit_list)
+    for i in range(minimum_num,maximum_num+1):
+        if i not in digit_list:
+            missing_list.append(i)
+    return missing_list
+            
+num=632718
+print(missing(num))
+
+# missing numbers in a list that is even number
+def missing_even_numbers(lst):
+    minimum=float("inf")
+    maximum=float("-inf")
+    missing_numbers=[]
+    for i in lst:
+        if i>maximum:
+            maximum=i
+        if i<minimum:
+            minimum=i
+    for i in range(minimum,maximum+1):
+        if i not in lst and i%2==0:
+            missing_numbers.append(i)
+    return missing_numbers
+lst=[-4,6,10,12]
+print(missing_even_numbers(lst))
