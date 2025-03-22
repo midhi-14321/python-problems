@@ -35,3 +35,29 @@ while low<high:
     low=low+1
     high=high-1
 print(lst)
+
+#method 4
+l=10
+m=20
+for i in range(l+1):
+    if i==10:
+        l,m=m,l
+        break
+print(l,m)
+
+#method 5
+m=10
+n=20
+m=m^n
+n=m^n
+m=m^n
+print(m,n)
+
+#method 6
+l=10
+m=20
+for i in range(l+1):
+    if i==10:
+        l,m=m,l
+        break
+print(l,m)
