@@ -58,3 +58,31 @@ for j in range(row,-1,-1):
         else:
             print(' ',end=' ')
     print()
+
+#pattern 7
+row=int(input('enter a number: '))
+num1,num2=0,1
+for i in range(0,row):
+    for j in range(0,row):
+        if i>=j:
+            print(num1,end=' ')
+            num1,num2=num2,num1+num2
+    print()
+
+#pattern 8
+row=int(input('enter a number: '))
+count=65
+for i in range(1,row+1):
+    for j in range(1,i+1):
+        print(chr(count),end=' ')
+        count+=1
+    print()
+
+#pattern 9
+row=int(input('enter a number: '))
+count=65
+for i in range(1,row+1):
+    for j in range(1,i+1):
+        print(chr(count),end=' ')
+    count+=1
+    print()

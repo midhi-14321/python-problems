@@ -2,5 +2,5 @@
 num=int(input('enter a number: '))
 lst=[]
 for i in range(1,num+1):
-    lst.append(int(i))
+    lst.append((i))
 print(lst)
